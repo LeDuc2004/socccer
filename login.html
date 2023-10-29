@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Đăng Nhập</title>
+    <!-- Bao gồm tệp CSS của Bootstrap 3 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="./login.js"></script>
+    <script>
+      function login() {
+        window.localStorage.setItem("login", "true");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-4 col-md-offset-4">
+        <h2 class="text-center">Đăng Nhập</h2>
+        <form class="form" role="form">
+          <div class="form-group">
+            <label for="username">Tài khoản:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Nhập tên tài khoản"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Mật khẩu:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Nhập mật khẩu"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-block"
+            onclick="login()"
+          >
+            Đăng Nhập
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bao gồm tệp JavaScript của Bootstrap 3 và jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
