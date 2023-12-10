@@ -1,0 +1,9 @@
+.card {
+  width: 600px;
+  height: 611px;
+  background: #fff;
+}
+.card-head .title {
+  display: flex;
+  flex-direction: column;
+}
